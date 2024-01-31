@@ -140,6 +140,11 @@ export default function Game() {
         console.log("Jump")
         this.player.setVelocityY(jumpForce);
       }
+
+      if (this.player.y > 700) {
+        this.player.y = 700;
+      }
+
       }
     }
         
